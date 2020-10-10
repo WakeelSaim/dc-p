@@ -1,0 +1,153 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BootStrap HTML5 CSS3 Theme</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/fullcalendar.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/chosen.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/transitions.css">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body class="dc-home">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Preloader Start -->
+	<div class="preloader-outer">
+		<div class="wt-preloader-holder">
+			<div class="wt-loader"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+	<!-- Wrapper Start -->
+	<div id="dc-wrapper" class="dc-wrapper dc-haslayout">
+		<!-- Main Start -->
+		<main id="dc-main" class="dc-main dc-haslayout">
+			<div class="dc-haslayout dc-comgsnspace">
+				<!-- Comming soon Start-->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 col-md-12">
+							<div class="dc-comingsoon-holder dc-haslayout">
+								<div class="dc-comingsoon-aligncenter dc-comingsoonvtwo">
+									<div class="dc-comingsoon-content">
+										<strong class="dc-comingsoon-logo"><img src="images/coomingsoon/logo.png" alt="img description"></strong>
+										<div class="dc-cmgsooncntent">
+											<div class="dc-title">
+												<h2><span>Stay Tuned We’re</span> Launching Very Soon!</h2>
+											</div>
+											<div class="dc-description">
+												<p>Consectetur adipisicing elit sed dotem eiusmod tempor incuntes ut labore etdolore maigna aliqua enim.</p>
+											</div>		
+										</div>
+										<ul id="dc-comming-sooncounter" class="dc-comming-sooncounter dc-comming-sooncountervtwo">
+											<li class="dc-counterboxes">
+												<div id="days" class="timer_box days"><h1>244</h1><p>Days</p></div>
+											</li>
+											<li class="dc-counterboxes">
+												<div id="hours" class="timer_box hours"><h1>10</h1><p>Hours</p></div>
+											</li>
+											<li class="dc-counterboxes">
+												<div id="minutes" class="timer_box minutes"><h1>54</h1><p>Minutes</p></div>
+											</li>
+											<li class="dc-counterboxes">
+												<div  id="seconds" class="timer_box seconds"><h1>56</h1><p>Seconds</p></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Comming soon End-->
+			</div>
+			<!-- Emerging Clients End -->
+		</main>
+		<!-- Main End -->
+		<!-- Footer Start -->
+		<footer id="dc-footer" class="dc-cmgsoonftr dc-haslayout">
+			<div class="dc-footerbottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<p class="dc-copyright">Copyrights © 2019 by <span>Doctoroc.</span> All Rights Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</footer>
+		<!-- Footer End -->
+	</div>
+	<script src="js/vendor/jquery-3.3.1.js"></script>
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/chosen.jquery.js"></script>
+	<script src="js/scrollbar.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/prettyPhoto.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/jRate.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		/*Comming soon V2*/
+			(function($) {
+			var launch = new Date(2019, 9, 1, 1, 12);
+			var days = $('.days');
+			var hours = $('.hours');
+			var minutes = $('.minutes');
+			var seconds = $('.seconds');
+			setDate();
+			function setDate(){
+				var now = new Date();
+				if( launch < now ){
+					days.html('<h1>0</h1><p>Days</p>');
+					hours.html('<h1>0</h1><p>Hours</p>');
+					minutes.html('<h1>0</h1><p>Minutes</p>');
+					seconds.html('<h1>0</h1><p>Seconds</p>');
+				}
+				else{
+					var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
+					var d = Math.floor(s/86400);
+					days.html('<h1>'+d+'</h1><p>Day'+(d>1?'s':''),'</p>');
+					s -= d*86400;
+					var h = Math.floor(s/3600);
+					hours.html('<h1>'+h+'</h1><p>Hour'+(h>1?'s':''),'</p>');
+					s -= h*3600;
+					var m = Math.floor(s/60);
+					minutes.html('<h1>'+m+'</h1><p>Minutes'+(m>1?'s':''),'</p>');
+					s = Math.floor(s-m*60);
+					seconds.html('<h1>'+s+'</h1><p>Seconds'+(s>1?'':''),'</p>');
+					setTimeout(setDate, 1000);
+				}
+			}
+		})(jQuery);	
+
+	</script>
+</body>
+</html>
